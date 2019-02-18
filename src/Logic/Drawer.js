@@ -24,10 +24,10 @@ class Drawer extends Component {
         this.vertreklanen = {};
         this.data = {};
 
+        this.lanes = {};    // hash to translate id to description
+
         this.state = {
-            laneValues: {},
-            laneInfo: "",
-            lanes: [],
+            laneValues: {}, //contains the
         };
 
     }
@@ -43,6 +43,7 @@ class Drawer extends Component {
             _store.getQuads(quad.object, namedNode('http://purl.org/dc/terms/description'), null).forEach( (quad) => {
                 _store.getQuads(null, namedNode('https://w3id.org/opentrafficlights#departureLane'), quad.subject).forEach((connectie) => {
                     let signalgroup = _store.getQuads(connectie.subject, namedNode('https://w3id.org/opentrafficlights#signalGroup'), null)[0].object.value;        //why 0 ?
+                    console.log("signalGroup");
                     let test = _store.getQuads(connectie.subject, namedNode('https://w3id.org/opentrafficlights#signalGroup'), null)[0].object.value;
                     console.log(test);
                     _store.getQuads(connectie.subject, namedNode('https://w3id.org/opentrafficlights#arrivalLane'), null).forEach( (arrivalLane) => {
@@ -55,8 +56,16 @@ class Drawer extends Component {
                             };
                             if(!laneValues[quad.subject.value]) laneValues[quad.subject.value] = {};
                             laneValues[quad.subject.value][arrivalLane.object.value] = ["initial","initial"];
+                            if(!this.lanes[arrivalLane.object.value]){
+                                this.lanes[arrivalLane.object.value] = descr.object.value;
+                            }
                         });
                     });
+
+                    if(!this.lanes[quad.subject.value]){
+                        this.lanes[quad.subject.value] = quad.object.value;
+                    }
+
                 });
             });
         });
@@ -200,8 +209,8 @@ class Drawer extends Component {
         })[0];
 
         let generatedAtTime = latest.object.value;
-        console.log("latest: ");
-        console.log(latest);
+        //console.log("latest: ");
+        //console.log(latest);
 
         let doc = this;
         let laneValues = this.state.laneValues;
@@ -255,7 +264,6 @@ class Drawer extends Component {
         else {
             // orange
         }
-        this.setState({laneInfo: info});
         return info;
     }
 
@@ -280,19 +288,24 @@ class Drawer extends Component {
 
     render() {
         console.log("render");
-        const {laneValues, laneInfo} = this.state;
+        const {laneValues} = this.state;
         //console.log(this.vertreklanen);
         let doc = this;
         return (
             <div className="Drawer">
-                <p>{laneInfo}</p>
                 <Table>
+                    <Table.Header>
+                        <Table.Row>
+                            <Table.HeaderCell>From Lane:</Table.HeaderCell>
+                            <Table.HeaderCell>To Lanes:</Table.HeaderCell>
+                        </Table.Row>
+                    </Table.Header>
                     <Table.Body>
                         {Object.keys(this.vertreklanen).map(
                             function (fromLane) {
                                 // console.log("from: " + fromLane);
                                 return (
-                                    <Table.Row><Table.HeaderCell>{fromLane}</Table.HeaderCell>{Object.keys(doc.vertreklanen[fromLane]).map(
+                                    <Table.Row><Table.Cell>{fromLane}:{doc.lanes[fromLane]}</Table.Cell>{Object.keys(doc.vertreklanen[fromLane]).map(
                                         function (toLane) {
                                             //console.log("to: " + toLane);
                                             //console.log("lanevalues");
@@ -301,15 +314,15 @@ class Drawer extends Component {
                                             const count = laneValues[fromLane][toLane] ? laneValues[fromLane][toLane][0] : "fail";
                                             if (label_ === 'https://w3id.org/opentrafficlights/thesauri/signalphase/2' || label_ === 'https://w3id.org/opentrafficlights/thesauri/signalphase/3') {
                                                 // Red
-                                                return (<Table.Cell>{toLane}<p color={'red'}>{count}</p></Table.Cell>);
+                                                return (<Table.Cell>{toLane}:{doc.lanes[toLane]}<p style={{color: 'red'}}>{count}</p></Table.Cell>);
                                             }
                                             else if (label_ === 'https://w3id.org/opentrafficlights/thesauri/signalphase/5' || label_ === 'https://w3id.org/opentrafficlights/thesauri/signalphase/6') {
                                                 // green
-                                                return (<Table.Cell>{toLane}<p color={'green'}>{count}</p></Table.Cell>);
+                                                return (<Table.Cell>{toLane}:{doc.lanes[toLane]}<p style={{color: 'green'}}>{count}</p></Table.Cell>);
                                             }
                                             else {
                                                 // orange
-                                                return (<Table.Cell>{toLane}<p color={'orange'}>{count}</p></Table.Cell>);
+                                                return (<Table.Cell>{toLane}:{doc.lanes[toLane]}<p style={{ color: 'orange'}}>{count}</p></Table.Cell>);
                                             }
                                         })
                                     }</Table.Row>);
