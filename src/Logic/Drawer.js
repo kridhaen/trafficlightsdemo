@@ -209,26 +209,26 @@ class Drawer extends Component {
             function (fromLane) {
                 Object.keys(doc.vertreklanen[fromLane]).forEach(
                     function (toLane) {
-                        for(let signal in doc.vertreklanen[fromLane][toLane]['https://w3id.org/opentrafficlights#signalGroup']){
-                            // Get state of active signalgroup
-                            //console.log(signal);
-                            //console.log(this.sg);
-                            let signalstate = _store.getQuads(namedNode(doc.sg), namedNode('https://w3id.org/opentrafficlights#signalState'), null, latest.subject)[0];
-                            if (signalstate) {
-                                let minEndTime = _store.getQuads(signalstate.object, namedNode('https://w3id.org/opentrafficlights#minEndTime'), null, latest.subject)[0];
-                                let maxEndTime = _store.getQuads(signalstate.object, namedNode('https://w3id.org/opentrafficlights#maxEndTime'), null, latest.subject)[0];
-                                let signalPhase = _store.getQuads(signalstate.object, namedNode('https://w3id.org/opentrafficlights#signalPhase'), null, latest.subject)[0];
+                        let signal = doc.vertreklanen[fromLane][toLane]['https://w3id.org/opentrafficlights#signalGroup'];
+                        // Get state of active signalgroup
+                        //console.log(signal);
+                        //console.log(this.sg);
+                        let signalstate = _store.getQuads(namedNode(signal), namedNode('https://w3id.org/opentrafficlights#signalState'), null, latest.subject)[0];
+                        if (signalstate) {
+                            let minEndTime = _store.getQuads(signalstate.object, namedNode('https://w3id.org/opentrafficlights#minEndTime'), null, latest.subject)[0];
+                            let maxEndTime = _store.getQuads(signalstate.object, namedNode('https://w3id.org/opentrafficlights#maxEndTime'), null, latest.subject)[0];
+                            let signalPhase = _store.getQuads(signalstate.object, namedNode('https://w3id.org/opentrafficlights#signalPhase'), null, latest.subject)[0];
 
-                                let count = Math.round((new Date(minEndTime.object.value).getTime() - new Date(generatedAtTime).getTime())/1000);
-                                if (minEndTime.object.value === maxEndTime.object.value) {
-                                    laneValues[fromLane][toLane] = [count, signalPhase.object.value];
-                                    //this.showCounterLabel(count, signalPhase.object.value);
-                                } else {
-                                    laneValues[fromLane][toLane] = [">" + count, signalPhase.object.value];
-                                    //this.showCounterLabel("> " + count, signalPhase.object.value);
-                                }
+                            let count = Math.round((new Date(minEndTime.object.value).getTime() - new Date(generatedAtTime).getTime())/1000);
+                            if (minEndTime.object.value === maxEndTime.object.value) {
+                                laneValues[fromLane][toLane] = [count, signalPhase.object.value];
+                                //this.showCounterLabel(count, signalPhase.object.value);
+                            } else {
+                                laneValues[fromLane][toLane] = [">" + count, signalPhase.object.value];
+                                //this.showCounterLabel("> " + count, signalPhase.object.value);
                             }
                         }
+
                     }
                 )
 
