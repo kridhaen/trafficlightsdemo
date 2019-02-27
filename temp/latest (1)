@@ -1,0 +1,729 @@
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skos-thes: <http://purl.org/iso25964/skos-thes#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix otl: <https://w3id.org/opentrafficlights#>.
+
+<https://lodi.ilabt.imec.be/opentrafficlights/rawdata#Dataset> rdfs:type void:Dataset;
+    dcterms:subject <http://dbpedia.org/resource/Signal_timing>, <http://dbpedia.org/resource/Traffic_light>.
+_:b0_connection1 a otl:Connection;
+    otl:departureLane _:b0_lane1;
+    otl:arrivalLane _:b0_lane11;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/6>.
+_:b0_connection2 a otl:Connection;
+    otl:departureLane _:b0_lane2;
+    otl:arrivalLane _:b0_lane9;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/7>.
+_:b0_connection3 a otl:Connection;
+    otl:departureLane _:b0_lane2;
+    otl:arrivalLane _:b0_lane7;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/7>.
+_:b0_connection4 a otl:Connection;
+    otl:departureLane _:b0_lane2;
+    otl:arrivalLane _:b0_lane5;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/7>.
+_:b0_connection5 a otl:Connection;
+    otl:departureLane _:b0_lane8;
+    otl:arrivalLane _:b0_lane3;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/5>.
+_:b0_connection6 a otl:Connection;
+    otl:departureLane _:b0_lane8;
+    otl:arrivalLane _:b0_lane5;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/5>.
+_:b0_connection7 a otl:Connection;
+    otl:departureLane _:b0_lane8;
+    otl:arrivalLane _:b0_lane7;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/5>.
+_:b0_connection8 a otl:Connection;
+    otl:departureLane _:b0_lane8;
+    otl:arrivalLane _:b0_lane11;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/5>.
+_:b0_connection9 a otl:Connection;
+    otl:departureLane _:b0_lane6;
+    otl:arrivalLane _:b0_lane5;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/4>.
+_:b0_connection10 a otl:Connection;
+    otl:departureLane _:b0_lane6;
+    otl:arrivalLane _:b0_lane3;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/4>.
+_:b0_connection11 a otl:Connection;
+    otl:departureLane _:b0_lane6;
+    otl:arrivalLane _:b0_lane11;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/4>.
+_:b0_connection12 a otl:Connection;
+    otl:departureLane _:b0_lane6;
+    otl:arrivalLane _:b0_lane9;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/4>.
+_:b0_connection13 a otl:Connection;
+    otl:departureLane _:b0_lane4;
+    otl:arrivalLane _:b0_lane3;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/3>.
+_:b0_connection14 a otl:Connection;
+    otl:departureLane _:b0_lane4;
+    otl:arrivalLane _:b0_lane11;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/3>.
+_:b0_connection15 a otl:Connection;
+    otl:departureLane _:b0_lane4;
+    otl:arrivalLane _:b0_lane9;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/3>.
+_:b0_connection16 a otl:Connection;
+    otl:departureLane _:b0_lane4;
+    otl:arrivalLane _:b0_lane7;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/3>.
+_:b0_connection17 a otl:Connection;
+    otl:departureLane _:b0_lane10;
+    otl:arrivalLane _:b0_lane3;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/1>.
+_:b0_connection18 a otl:Connection;
+    otl:departureLane _:b0_lane10;
+    otl:arrivalLane _:b0_lane5;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/1>.
+_:b0_connection19 a otl:Connection;
+    otl:departureLane _:b0_lane10;
+    otl:arrivalLane _:b0_lane7;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/1>.
+_:b0_connection20 a otl:Connection;
+    otl:departureLane _:b0_lane10;
+    otl:arrivalLane _:b0_lane9;
+    otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/1>.
+_:b0_lane1 a otl:Lane;
+    <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2120579 4.3974731, 51.2118214 4.3991321)";
+    <http://dbpedia.org/ontology/width> "100";
+    dcterms:description "Kronenburgstraat (> nr. 48)".
+_:b0_lane2 a otl:Lane;
+    <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2120361 4.3974671, 51.2120058 4.3976971, 51.2120184 4.3977501)";
+    <http://dbpedia.org/ontology/width> "100";
+    dcterms:description "Kronenburgstraat (> nr. 48)".
+_:b0_lane3 a otl:Lane;
+    <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2118379 4.3970829, 51.2111054 4.3961904)";
+    <http://dbpedia.org/ontology/width> "100";
+    dcterms:description "Volkstraat".
+_:b0_lane4 a otl:Lane;
+    <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2117840 4.3972854, 51.2107036 4.3974678)";
+    <http://dbpedia.org/ontology/width> "100";
+    dcterms:description "Geuzenstraat".
+_:b0_lane5 a otl:Lane;
+    <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2117896 4.3972204, 51.2114204 4.3973075, 51.2106996 4.3974309)";
+    <http://dbpedia.org/ontology/width> "100";
+    dcterms:description "Geuzenstraat".
+_:b0_lane6 a otl:Lane;
+    <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2118379 4.3970829, 51.2111054 4.3961904)";
+    <http://dbpedia.org/ontology/width> "100";
+    dcterms:description "Volkstraat".
+_:b0_lane7 a otl:Lane;
+    <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2118758 4.3970172, 51.2111339 4.3961220)";
+    <http://dbpedia.org/ontology/width> "100";
+    dcterms:description "Volkstraat".
+_:b0_lane8 a otl:Lane;
+    <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2120563 4.3969880, 51.2121071 4.3965394, 51.2123772 4.3942387)";
+    <http://dbpedia.org/ontology/width> "100";
+    dcterms:description "Kronenburgstraat (< nr. 48)".
+_:b0_lane9 a otl:Lane;
+    <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2121009 4.3969997, 51.2124223 4.3942465)";
+    <http://dbpedia.org/ontology/width> "100";
+    dcterms:description "Kronenburgstraat (< nr. 48)".
+_:b0_lane10 a otl:Lane;
+    <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2122527 4.3973091, 51.2127026 4.3975384)";
+    <http://dbpedia.org/ontology/width> "100";
+    dcterms:description "Nationalestraat".
+_:b0_lane11 a otl:Lane;
+    <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2122440 4.3973510, 51.2126980 4.3975804)";
+    <http://dbpedia.org/ontology/width> "100";
+    dcterms:description "Nationalestraat".
+<https://opentrafficlights.org/id/signalgroup/K648/1> rdfs:type otl:Signalgroup.
+<https://opentrafficlights.org/id/signalgroup/K648/2> rdfs:type otl:Signalgroup.
+<https://opentrafficlights.org/id/signalgroup/K648/3> rdfs:type otl:Signalgroup.
+<https://opentrafficlights.org/id/signalgroup/K648/4> rdfs:type otl:Signalgroup.
+<https://opentrafficlights.org/id/signalgroup/K648/5> rdfs:type otl:Signalgroup.
+<https://opentrafficlights.org/id/signalgroup/K648/6> rdfs:type otl:Signalgroup.
+<https://opentrafficlights.org/id/signalgroup/K648/7> rdfs:type otl:Signalgroup.
+<https://opentrafficlights.org/id/signalgroup/K648/8> rdfs:type otl:Signalgroup.
+<https://opentrafficlights.org/id/signalgroup/K648/9> rdfs:type otl:Signalgroup.
+<https://w3id.org/opentrafficlights/thesauri/signalphase> a skos:ConceptScheme;
+    dcterms:identifier "SIGNAL PHASE";
+    skos:hasTopConcept <https://w3id.org/opentrafficlights/thesauri/signalphase/0>, <https://w3id.org/opentrafficlights/thesauri/signalphase/1>, <https://w3id.org/opentrafficlights/thesauri/signalphase/2>, <https://w3id.org/opentrafficlights/thesauri/signalphase/3>, <https://w3id.org/opentrafficlights/thesauri/signalphase/4>, <https://w3id.org/opentrafficlights/thesauri/signalphase/5>, <https://w3id.org/opentrafficlights/thesauri/signalphase/6>, <https://w3id.org/opentrafficlights/thesauri/signalphase/7>, <https://w3id.org/opentrafficlights/thesauri/signalphase/8>, <https://w3id.org/opentrafficlights/thesauri/signalphase/9>;
+    skos:prefLabel "Signal phase"@en, "Signaal fase"@nl.
+<https://w3id.org/opentrafficlights/thesauri/signalphase/0> a skos:Concept;
+    dcterms:identifier "0"^^xsd:integer;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase>;
+    skos:prefLabel "Unavailable"@en, "Niet beschikbaar"@nl;
+    skos:note "This phase is used for unknown or error."@en, "Duidt aan dat er een probleem is gedetecteerd of de fase is onbekend."@nl.
+<https://w3id.org/opentrafficlights/thesauri/signalphase/1> a skos:Concept;
+    dcterms:identifier "1"^^xsd:integer;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase>;
+    skos:prefLabel "Unlit (DARK)"@en, "Onverlicht (DONKER)"@en;
+    skos:note "Stop vehicle at stop line. Do not proceed until it's safe."@en, "Stop het voertuig aan de stoplijn. Wacht tot het veilig is."@nl.
+<https://w3id.org/opentrafficlights/thesauri/signalphase/2> a skos:Concept;
+    dcterms:identifier "2"^^xsd:integer;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase>;
+    skos:prefLabel "Stop Then Proceed (flashing)"@en, "Stop-dan-verdergaan (knipperlicht)"@nl;
+    skos:note "Stop vehicle at stop line. Do not proceed until it's safe."@en, "Stop het voertuig aan de stoplijn. Wacht tot het veilig is."@nl.
+<https://w3id.org/opentrafficlights/thesauri/signalphase/3> a skos:Concept;
+    dcterms:identifier "3"^^xsd:integer;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase>;
+    skos:prefLabel "Stop And Remain"@en, "Stop-En-Wacht"@nl;
+    skos:note "Stop vehicle at stop line. Do not proceed."@en, "Stop het voertuig aan de stoplijn. Wacht."@nl.
+<https://w3id.org/opentrafficlights/thesauri/signalphase/4> a skos:Concept;
+    dcterms:identifier "4"^^xsd:integer;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase>;
+    skos:prefLabel "Pre-Movement"@en, "Voor-vertrek"@nl;
+    skos:note "Stop vehicle. Prepare to proceed."@en, "Stop het voertuig. Maak klaar om te vertrekken."@nl, "Stop het voertuig. Maak klaar om te vertrekken."@nl;
+    skos:editorialNote "Used in the European Union."@en, "Van toepassing in Europese Unie."@nl.
+<https://w3id.org/opentrafficlights/thesauri/signalphase/5> a skos:Concept;
+    dcterms:identifier "5"^^xsd:integer;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase>;
+    skos:prefLabel "Permissive Movement Allowed"@en, "Verdergaan is toegelaten onder voorwaarden."@nl;
+    skos:note "Proceed with caution. Must yield to all conflicting traffic."@en, "Ga verder onder voorwaarde dat voorrang gegeven wordt bij conflict."@nl.
+<https://w3id.org/opentrafficlights/thesauri/signalphase/6> a skos:Concept;
+    dcterms:identifier "6"^^xsd:integer;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase>;
+    skos:prefLabel "Protected Movement Allowed"@en, "Ga verder met voorrang-garantie."@nl;
+    skos:note "Proceed in direction indicated."@en, "Ga verder in de aangeduide richting."@nl.
+<https://w3id.org/opentrafficlights/thesauri/signalphase/7> a skos:Concept;
+    dcterms:identifier "7"^^xsd:integer;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase>;
+    skos:prefLabel "Permissive Clearance"@en, "Kruispunt vrijmaken zonder voorrang."@nl;
+    skos:note "Prepare to stop. Proceed if unable to stop. Conflicting traffic may be present."@en, "Stop indien mogelijk. Anders maak kruispunt vrij. Conflicterend verkeer kan aanwezig zijn."@nl.
+<https://w3id.org/opentrafficlights/thesauri/signalphase/8> a skos:Concept;
+    dcterms:identifier "8"^^xsd:integer;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase>;
+    skos:prefLabel "Protected Clearance"@en, "Kruispunt vrijmaken met voorrang-garantie."@nl;
+    skos:note "Prepare to stop. Proceed if unable to stop in direction indicated."@en, "Stop indien mogelijk. Anders maak kruispunt vrij."@nl.
+<https://w3id.org/opentrafficlights/thesauri/signalphase/9> a skos:Concept;
+    dcterms:identifier "9"^^xsd:integer;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase>;
+    skos:prefLabel "Caution Conflicting Traffic (Flashing)"@en, "Pas op voor conflicterend verkeer."@nl;
+    skos:note "Proceed with caution. Conflicting traffic may be present at intersection conflict area."@en, "Ga opgelet verder. Mogelijk is er conflicterend verkeer op het kruispunt."@nl.
+
+
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:19.152Z> {
+_:b3126600_b9992783 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/0>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:34.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/6> <https://w3id.org/opentrafficlights#signalState> _:b3126600_b9992783.
+_:b3126600_b9992784 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/7> <https://w3id.org/opentrafficlights#signalState> _:b3126600_b9992784.
+_:b3126600_b9992785 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/5> <https://w3id.org/opentrafficlights#signalState> _:b3126600_b9992785.
+_:b3126600_b9992786 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:25.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:25.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/4> <https://w3id.org/opentrafficlights#signalState> _:b3126600_b9992786.
+_:b3126600_b9992787 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:57.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:19.152Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/3> <https://w3id.org/opentrafficlights#signalState> _:b3126600_b9992787.
+_:b3126600_b9992788 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:06.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/1> <https://w3id.org/opentrafficlights#signalState> _:b3126600_b9992788.
+_:b3126600_b9992789 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/8> <https://w3id.org/opentrafficlights#signalState> _:b3126600_b9992789.
+_:b3126600_b9992790 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/12> <https://w3id.org/opentrafficlights#signalState> _:b3126600_b9992790.
+_:b3126600_b9992791 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:15.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/9> <https://w3id.org/opentrafficlights#signalState> _:b3126600_b9992791.
+_:b3126600_b9992792 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/10> <https://w3id.org/opentrafficlights#signalState> _:b3126600_b9992792.
+_:b3126600_b9992793 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/11> <https://w3id.org/opentrafficlights#signalState> _:b3126600_b9992793
+}
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:19.152Z> <http://www.w3.org/ns/prov#generatedAtTime> "2019-02-14T11:59:19.152Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:18.152Z> {
+_:b3126594_b9992772 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/0>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:34.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/6> <https://w3id.org/opentrafficlights#signalState> _:b3126594_b9992772.
+_:b3126594_b9992773 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/7> <https://w3id.org/opentrafficlights#signalState> _:b3126594_b9992773.
+_:b3126594_b9992774 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/5> <https://w3id.org/opentrafficlights#signalState> _:b3126594_b9992774.
+_:b3126594_b9992775 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:25.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:25.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/4> <https://w3id.org/opentrafficlights#signalState> _:b3126594_b9992775.
+_:b3126594_b9992776 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:57.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:18.152Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/3> <https://w3id.org/opentrafficlights#signalState> _:b3126594_b9992776.
+_:b3126594_b9992777 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:06.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/1> <https://w3id.org/opentrafficlights#signalState> _:b3126594_b9992777.
+_:b3126594_b9992778 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/8> <https://w3id.org/opentrafficlights#signalState> _:b3126594_b9992778.
+_:b3126594_b9992779 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/12> <https://w3id.org/opentrafficlights#signalState> _:b3126594_b9992779.
+_:b3126594_b9992780 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:15.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/9> <https://w3id.org/opentrafficlights#signalState> _:b3126594_b9992780.
+_:b3126594_b9992781 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/10> <https://w3id.org/opentrafficlights#signalState> _:b3126594_b9992781.
+_:b3126594_b9992782 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/11> <https://w3id.org/opentrafficlights#signalState> _:b3126594_b9992782
+}
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:18.152Z> <http://www.w3.org/ns/prov#generatedAtTime> "2019-02-14T11:59:18.152Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:17.152Z> {
+_:b3126591_b9992761 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/0>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:34.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/6> <https://w3id.org/opentrafficlights#signalState> _:b3126591_b9992761.
+_:b3126591_b9992762 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/7> <https://w3id.org/opentrafficlights#signalState> _:b3126591_b9992762.
+_:b3126591_b9992763 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/5> <https://w3id.org/opentrafficlights#signalState> _:b3126591_b9992763.
+_:b3126591_b9992764 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:25.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:25.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/4> <https://w3id.org/opentrafficlights#signalState> _:b3126591_b9992764.
+_:b3126591_b9992765 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:57.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:17.152Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/3> <https://w3id.org/opentrafficlights#signalState> _:b3126591_b9992765.
+_:b3126591_b9992766 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:06.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/1> <https://w3id.org/opentrafficlights#signalState> _:b3126591_b9992766.
+_:b3126591_b9992767 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/8> <https://w3id.org/opentrafficlights#signalState> _:b3126591_b9992767.
+_:b3126591_b9992768 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/12> <https://w3id.org/opentrafficlights#signalState> _:b3126591_b9992768.
+_:b3126591_b9992769 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:15.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/9> <https://w3id.org/opentrafficlights#signalState> _:b3126591_b9992769.
+_:b3126591_b9992770 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/10> <https://w3id.org/opentrafficlights#signalState> _:b3126591_b9992770.
+_:b3126591_b9992771 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/11> <https://w3id.org/opentrafficlights#signalState> _:b3126591_b9992771
+}
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:17.152Z> <http://www.w3.org/ns/prov#generatedAtTime> "2019-02-14T11:59:17.152Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:16.152Z> {
+_:b3126585_b9992750 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/0>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:34.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/6> <https://w3id.org/opentrafficlights#signalState> _:b3126585_b9992750.
+_:b3126585_b9992751 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/7> <https://w3id.org/opentrafficlights#signalState> _:b3126585_b9992751.
+_:b3126585_b9992752 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/5> <https://w3id.org/opentrafficlights#signalState> _:b3126585_b9992752.
+_:b3126585_b9992753 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:25.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:25.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/4> <https://w3id.org/opentrafficlights#signalState> _:b3126585_b9992753.
+_:b3126585_b9992754 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:57.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:16.152Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/3> <https://w3id.org/opentrafficlights#signalState> _:b3126585_b9992754.
+_:b3126585_b9992755 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:06.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/1> <https://w3id.org/opentrafficlights#signalState> _:b3126585_b9992755.
+_:b3126585_b9992756 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/8> <https://w3id.org/opentrafficlights#signalState> _:b3126585_b9992756.
+_:b3126585_b9992757 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/12> <https://w3id.org/opentrafficlights#signalState> _:b3126585_b9992757.
+_:b3126585_b9992758 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:15.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/9> <https://w3id.org/opentrafficlights#signalState> _:b3126585_b9992758.
+_:b3126585_b9992759 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/10> <https://w3id.org/opentrafficlights#signalState> _:b3126585_b9992759.
+_:b3126585_b9992760 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/11> <https://w3id.org/opentrafficlights#signalState> _:b3126585_b9992760
+}
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:16.152Z> <http://www.w3.org/ns/prov#generatedAtTime> "2019-02-14T11:59:16.152Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:15.752Z> {
+_:b3126582_b9992747 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:25.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:25.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/4> <https://w3id.org/opentrafficlights#signalState> _:b3126582_b9992747.
+_:b3126582_b9992748 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:06.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/1> <https://w3id.org/opentrafficlights#signalState> _:b3126582_b9992748.
+_:b3126582_b9992749 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:15.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/9> <https://w3id.org/opentrafficlights#signalState> _:b3126582_b9992749
+}
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:15.752Z> <http://www.w3.org/ns/prov#generatedAtTime> "2019-02-14T11:59:15.752Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:15.152Z> {
+_:b3126579_b9992736 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/0>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:34.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/6> <https://w3id.org/opentrafficlights#signalState> _:b3126579_b9992736.
+_:b3126579_b9992737 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/7> <https://w3id.org/opentrafficlights#signalState> _:b3126579_b9992737.
+_:b3126579_b9992738 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/5> <https://w3id.org/opentrafficlights#signalState> _:b3126579_b9992738.
+_:b3126579_b9992739 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:15.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:15.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/4> <https://w3id.org/opentrafficlights#signalState> _:b3126579_b9992739.
+_:b3126579_b9992740 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:57.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:15.152Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/3> <https://w3id.org/opentrafficlights#signalState> _:b3126579_b9992740.
+_:b3126579_b9992741 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:15.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:15.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/1> <https://w3id.org/opentrafficlights#signalState> _:b3126579_b9992741.
+_:b3126579_b9992742 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/8> <https://w3id.org/opentrafficlights#signalState> _:b3126579_b9992742.
+_:b3126579_b9992743 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/12> <https://w3id.org/opentrafficlights#signalState> _:b3126579_b9992743.
+_:b3126579_b9992744 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:15.152Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/9> <https://w3id.org/opentrafficlights#signalState> _:b3126579_b9992744.
+_:b3126579_b9992745 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/10> <https://w3id.org/opentrafficlights#signalState> _:b3126579_b9992745.
+_:b3126579_b9992746 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/11> <https://w3id.org/opentrafficlights#signalState> _:b3126579_b9992746
+}
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:15.152Z> <http://www.w3.org/ns/prov#generatedAtTime> "2019-02-14T11:59:15.152Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:14.752Z> {
+_:b3126576_b9992732 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/7> <https://w3id.org/opentrafficlights#signalState> _:b3126576_b9992732.
+_:b3126576_b9992733 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/5> <https://w3id.org/opentrafficlights#signalState> _:b3126576_b9992733.
+_:b3126576_b9992734 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/8> <https://w3id.org/opentrafficlights#signalState> _:b3126576_b9992734.
+_:b3126576_b9992735 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.552Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:02:14.552Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/10> <https://w3id.org/opentrafficlights#signalState> _:b3126576_b9992735
+}
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:14.752Z> <http://www.w3.org/ns/prov#generatedAtTime> "2019-02-14T11:59:14.752Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:14.153Z> {
+_:b3126570_b9992721 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/0>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:34.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/6> <https://w3id.org/opentrafficlights#signalState> _:b3126570_b9992721.
+_:b3126570_b9992722 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:14.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/7> <https://w3id.org/opentrafficlights#signalState> _:b3126570_b9992722.
+_:b3126570_b9992723 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:14.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/5> <https://w3id.org/opentrafficlights#signalState> _:b3126570_b9992723.
+_:b3126570_b9992724 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/4> <https://w3id.org/opentrafficlights#signalState> _:b3126570_b9992724.
+_:b3126570_b9992725 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:57.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:14.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/3> <https://w3id.org/opentrafficlights#signalState> _:b3126570_b9992725.
+_:b3126570_b9992726 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/1> <https://w3id.org/opentrafficlights#signalState> _:b3126570_b9992726.
+_:b3126570_b9992727 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:14.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/8> <https://w3id.org/opentrafficlights#signalState> _:b3126570_b9992727.
+_:b3126570_b9992728 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/12> <https://w3id.org/opentrafficlights#signalState> _:b3126570_b9992728.
+_:b3126570_b9992729 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:40.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:14.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/9> <https://w3id.org/opentrafficlights#signalState> _:b3126570_b9992729.
+_:b3126570_b9992730 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:14.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/10> <https://w3id.org/opentrafficlights#signalState> _:b3126570_b9992730.
+_:b3126570_b9992731 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/11> <https://w3id.org/opentrafficlights#signalState> _:b3126570_b9992731
+}
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:14.153Z> <http://www.w3.org/ns/prov#generatedAtTime> "2019-02-14T11:59:14.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:13.153Z> {
+_:b3126567_b9992710 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/0>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:34.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/6> <https://w3id.org/opentrafficlights#signalState> _:b3126567_b9992710.
+_:b3126567_b9992711 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:13.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/7> <https://w3id.org/opentrafficlights#signalState> _:b3126567_b9992711.
+_:b3126567_b9992712 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:13.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/5> <https://w3id.org/opentrafficlights#signalState> _:b3126567_b9992712.
+_:b3126567_b9992713 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/4> <https://w3id.org/opentrafficlights#signalState> _:b3126567_b9992713.
+_:b3126567_b9992714 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:57.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:13.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/3> <https://w3id.org/opentrafficlights#signalState> _:b3126567_b9992714.
+_:b3126567_b9992715 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/1> <https://w3id.org/opentrafficlights#signalState> _:b3126567_b9992715.
+_:b3126567_b9992716 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:13.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/8> <https://w3id.org/opentrafficlights#signalState> _:b3126567_b9992716.
+_:b3126567_b9992717 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/12> <https://w3id.org/opentrafficlights#signalState> _:b3126567_b9992717.
+_:b3126567_b9992718 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:40.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:13.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/9> <https://w3id.org/opentrafficlights#signalState> _:b3126567_b9992718.
+_:b3126567_b9992719 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:13.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/10> <https://w3id.org/opentrafficlights#signalState> _:b3126567_b9992719.
+_:b3126567_b9992720 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/11> <https://w3id.org/opentrafficlights#signalState> _:b3126567_b9992720
+}
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:13.153Z> <http://www.w3.org/ns/prov#generatedAtTime> "2019-02-14T11:59:13.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:12.153Z> {
+_:b3126561_b9992699 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/0>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:31.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:00:34.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/6> <https://w3id.org/opentrafficlights#signalState> _:b3126561_b9992699.
+_:b3126561_b9992700 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:12.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/7> <https://w3id.org/opentrafficlights#signalState> _:b3126561_b9992700.
+_:b3126561_b9992701 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:12.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/5> <https://w3id.org/opentrafficlights#signalState> _:b3126561_b9992701.
+_:b3126561_b9992702 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/4> <https://w3id.org/opentrafficlights#signalState> _:b3126561_b9992702.
+_:b3126561_b9992703 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:57.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:12.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/3> <https://w3id.org/opentrafficlights#signalState> _:b3126561_b9992703.
+_:b3126561_b9992704 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:15.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/1> <https://w3id.org/opentrafficlights#signalState> _:b3126561_b9992704.
+_:b3126561_b9992705 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:12.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/8> <https://w3id.org/opentrafficlights#signalState> _:b3126561_b9992705.
+_:b3126561_b9992706 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/12> <https://w3id.org/opentrafficlights#signalState> _:b3126561_b9992706.
+_:b3126561_b9992707 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:40.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:12.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/9> <https://w3id.org/opentrafficlights#signalState> _:b3126561_b9992707.
+_:b3126561_b9992708 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/3>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:39.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T12:59:12.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/10> <https://w3id.org/opentrafficlights#signalState> _:b3126561_b9992708.
+_:b3126561_b9992709 <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#SignalState>;
+    <https://w3id.org/opentrafficlights#signalPhase> <https://w3id.org/opentrafficlights/thesauri/signalphase/6>;
+    <https://w3id.org/opentrafficlights#minEndTime> "2019-02-14T11:59:22.553Z"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <https://w3id.org/opentrafficlights#maxEndTime> "2019-02-14T11:59:40.553Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://opentrafficlights.org/id/signalgroup/K648/11> <https://w3id.org/opentrafficlights#signalState> _:b3126561_b9992709
+}
+<https://opentrafficlights.org/spat/K648?time=2019-02-14T11:59:12.153Z> <http://www.w3.org/ns/prov#generatedAtTime> "2019-02-14T11:59:12.153Z"^^<http://www.w3.org/2001/XMLSchema#date>.
+
+<#Metadata> {
+<https://lodi.ilabt.imec.be/observer/rawdata/latest> <http://www.w3.org/ns/hydra/core#search> <https://lodi.ilabt.imec.be/observer/rawdata/latest#search>.
+<https://lodi.ilabt.imec.be/observer/rawdata/latest#search> a <http://www.w3.org/ns/hydra/core#IriTemplate>;
+    <http://www.w3.org/ns/hydra/core#template> "https://lodi.ilabt.imec.be/observer/rawdata{?time}";
+    <http://www.w3.org/ns/hydra/core#variableRepresentation> <http://www.w3.org/ns/hydra/core#BasicRepresentation>;
+    <http://www.w3.org/ns/hydra/core#mapping> <https://lodi.ilabt.imec.be/observer/rawdata/latest#mapping>.
+<https://lodi.ilabt.imec.be/observer/rawdata/latest#mapping> a <http://www.w3.org/ns/hydra/core#IriTemplateMapping>;
+    <http://www.w3.org/ns/hydra/core#variable> "time";
+    <http://www.w3.org/ns/hydra/core#required> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<https://lodi.ilabt.imec.be/observer/rawdata/latest> <http://rdfs.org/ns/void#inDataset> <https://lodi.ilabt.imec.be/observer/rawdata#Dataset>;
+    <http://creativecommons.org/ns#license> <https://creativecommons.org/publicdomain/zero/1.0/>;
+    <http://www.w3.org/ns/hydra/core#previous> <https://lodi.ilabt.imec.be/observer/rawdata/fragments?time=2019-02-14T11:59:08.752Z>
+}
