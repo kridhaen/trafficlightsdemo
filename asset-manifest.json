@@ -1,14 +1,14 @@
 {
-  "main.css": "/trafficlightsdemo/static/css/main.72ac2312.chunk.css",
-  "main.js": "/trafficlightsdemo/static/js/main.23f8423e.chunk.js",
-  "main.js.map": "/trafficlightsdemo/static/js/main.23f8423e.chunk.js.map",
+  "main.css": "/trafficlightsdemo/static/css/main.e5d960e6.chunk.css",
+  "main.js": "/trafficlightsdemo/static/js/main.41dacd80.chunk.js",
+  "main.js.map": "/trafficlightsdemo/static/js/main.41dacd80.chunk.js.map",
   "runtime~main.js": "/trafficlightsdemo/static/js/runtime~main.2f8f9be5.js",
   "runtime~main.js.map": "/trafficlightsdemo/static/js/runtime~main.2f8f9be5.js.map",
-  "static/js/2.32d548c4.chunk.js": "/trafficlightsdemo/static/js/2.32d548c4.chunk.js",
-  "static/js/2.32d548c4.chunk.js.map": "/trafficlightsdemo/static/js/2.32d548c4.chunk.js.map",
+  "static/js/2.85610304.chunk.js": "/trafficlightsdemo/static/js/2.85610304.chunk.js",
+  "static/js/2.85610304.chunk.js.map": "/trafficlightsdemo/static/js/2.85610304.chunk.js.map",
   "index.html": "/trafficlightsdemo/index.html",
-  "precache-manifest.92cfa50a1363606603d2e01c2f19deba.js": "/trafficlightsdemo/precache-manifest.92cfa50a1363606603d2e01c2f19deba.js",
+  "precache-manifest.8a2480e75be2a3ff559ed5c77bed9830.js": "/trafficlightsdemo/precache-manifest.8a2480e75be2a3ff559ed5c77bed9830.js",
   "service-worker.js": "/trafficlightsdemo/service-worker.js",
-  "static/css/main.72ac2312.chunk.css.map": "/trafficlightsdemo/static/css/main.72ac2312.chunk.css.map",
+  "static/css/main.e5d960e6.chunk.css.map": "/trafficlightsdemo/static/css/main.e5d960e6.chunk.css.map",
   "static/media/logo.svg": "/trafficlightsdemo/static/media/logo.ee7cd8ed.svg"
 }
