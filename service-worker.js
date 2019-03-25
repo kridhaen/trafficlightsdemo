@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/trafficlightsdemo/precache-manifest.8a2480e75be2a3ff559ed5c77bed9830.js"
+  "/trafficlightsdemo/precache-manifest.562da79fbd700fbe65465bb30c806f0d.js"
 );
 
 workbox.clientsClaim();

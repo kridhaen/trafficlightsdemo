@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/trafficlightsdemo/static/js/runtime~main.2f8f9be5.js"
   },
   {
-    "revision": "41dacd80bcf7b755e01d",
-    "url": "/trafficlightsdemo/static/js/main.41dacd80.chunk.js"
+    "revision": "7c5ccc802a39bd849506",
+    "url": "/trafficlightsdemo/static/js/main.7c5ccc80.chunk.js"
   },
   {
-    "revision": "856103040339a4e2d3c4",
-    "url": "/trafficlightsdemo/static/js/2.85610304.chunk.js"
+    "revision": "4d6349b5f6dbdcf2d2e6",
+    "url": "/trafficlightsdemo/static/js/2.4d6349b5.chunk.js"
   },
   {
-    "revision": "41dacd80bcf7b755e01d",
+    "revision": "7c5ccc802a39bd849506",
     "url": "/trafficlightsdemo/static/css/main.e5d960e6.chunk.css"
   },
   {
-    "revision": "8f3e6cecfe0b74419bd2364150490cc8",
+    "revision": "f5dfafad8f9915fa8a40b52b05f09d6c",
     "url": "/trafficlightsdemo/index.html"
   }
 ];
