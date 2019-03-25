@@ -1,8 +1,7 @@
 {
-  "name": "demo-verkeerslichten",
+  "name": "trafficlightsdemo",
   "version": "0.1.0",
   "homepage": "https://kridhaen.github.io/trafficlightsdemo",
-  "private": true,
   "dependencies": {
     "mqtt": "^2.18.8",
     "n3": "^1.0.3",
