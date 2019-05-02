@@ -28,6 +28,8 @@ class Drawer extends Component {
 
         this.state = {
             laneValues: {}, //contains the
+            minEndTimes: {},
+            maxEndTimes: {},
         };
 
     }
@@ -39,6 +41,8 @@ class Drawer extends Component {
     initConfiguration(_store){
         console.log("initConfiguration");
         let laneValues = {};
+        let minEndTimes = {};
+        let maxEndTimes = {};
         _store.getQuads(null, namedNode('https://w3id.org/opentrafficlights#departureLane'), null).forEach((quad) => {
             _store.getQuads(quad.object, namedNode('http://purl.org/dc/terms/description'), null).forEach( (quad) => {
                 _store.getQuads(null, namedNode('https://w3id.org/opentrafficlights#departureLane'), quad.subject).forEach((connectie) => {
@@ -59,6 +63,10 @@ class Drawer extends Component {
                             if(!this.lanes[arrivalLane.object.value]){
                                 this.lanes[arrivalLane.object.value] = descr.object.value;
                             }
+                            if(!minEndTimes[quad.subject.value]) minEndTimes[quad.subject.value] = {};
+                            if(!maxEndTimes[quad.subject.value]) maxEndTimes[quad.subject.value] = {};
+                            minEndTimes[quad.subject.value][arrivalLane.object.value] = 0;
+                            maxEndTimes[quad.subject.value][arrivalLane.object.value] = 0;
                         });
                     });
 
@@ -70,7 +78,7 @@ class Drawer extends Component {
             });
         });
         //console.log(laneValues);
-        this.setState({lanes: this.vertreklanen, laneValues: laneValues});
+        this.setState({laneValues: laneValues, minEndTimes: minEndTimes, maxEndTimes: maxEndTimes});
         //console.log(this.vertreklanen);
     }
 
@@ -214,6 +222,8 @@ class Drawer extends Component {
 
         let doc = this;
         let laneValues = this.state.laneValues;
+        let minEndTimes = this.state.minEndTimes;
+        let maxEndTimes = this.state.maxEndTimes;
         Object.keys(this.vertreklanen).forEach(
             function (fromLane) {
                 Object.keys(doc.vertreklanen[fromLane]).forEach(
@@ -236,6 +246,8 @@ class Drawer extends Component {
                                 laneValues[fromLane][toLane] = [">" + count, signalPhase.object.value];
                                 //this.showCounterLabel("> " + count, signalPhase.object.value);
                             }
+                            minEndTimes[fromLane][toLane] = Math.round((new Date(minEndTime.object.value).getTime() - new Date(generatedAtTime).getTime())/1000);
+                            maxEndTimes[fromLane][toLane] = Math.round((new Date(maxEndTime.object.value).getTime() - new Date(generatedAtTime).getTime())/1000);
                         }
 
                     }
@@ -246,6 +258,8 @@ class Drawer extends Component {
 
         this.setState({
             laneValues: laneValues,
+            minEndTimes: minEndTimes,
+            maxEndTimes: maxEndTimes,
         })
 
     }
@@ -288,7 +302,7 @@ class Drawer extends Component {
 
     render() {
         console.log("render");
-        const {laneValues} = this.state;
+        const {laneValues, minEndTimes, maxEndTimes} = this.state;
         //console.log(this.vertreklanen);
         let doc = this;
         return (
@@ -314,15 +328,15 @@ class Drawer extends Component {
                                             const count = laneValues[fromLane][toLane] ? laneValues[fromLane][toLane][0] : "fail";
                                             if (label_ === 'https://w3id.org/opentrafficlights/thesauri/signalphase/2' || label_ === 'https://w3id.org/opentrafficlights/thesauri/signalphase/3') {
                                                 // Red
-                                                return (<Table.Cell>{toLane}:{doc.lanes[toLane]}<p style={{color: 'red'}}>{count}</p></Table.Cell>);
+                                                return (<Table.Cell>{toLane}:{doc.lanes[toLane]}<p style={{color: 'red'}}>{count}</p><div><p>minEndTime: {minEndTimes[fromLane][toLane]}</p><p>maxEndTime: {maxEndTimes[fromLane][toLane]}</p></div></Table.Cell>);
                                             }
                                             else if (label_ === 'https://w3id.org/opentrafficlights/thesauri/signalphase/5' || label_ === 'https://w3id.org/opentrafficlights/thesauri/signalphase/6') {
                                                 // green
-                                                return (<Table.Cell>{toLane}:{doc.lanes[toLane]}<p style={{color: 'green'}}>{count}</p></Table.Cell>);
+                                                return (<Table.Cell>{toLane}:{doc.lanes[toLane]}<p style={{color: 'green'}}>{count}</p><div><p>minEndTime: {minEndTimes[fromLane][toLane]}</p><p>maxEndTime: {maxEndTimes[fromLane][toLane]}</p></div></Table.Cell>);
                                             }
                                             else {
                                                 // orange
-                                                return (<Table.Cell>{toLane}:{doc.lanes[toLane]}<p style={{ color: 'orange'}}>{count}</p></Table.Cell>);
+                                                return (<Table.Cell>{toLane}:{doc.lanes[toLane]}<p style={{ color: 'orange'}}>{count}</p><div><p>minEndTime: {minEndTimes[fromLane][toLane]}</p><p>maxEndTime: {maxEndTimes[fromLane][toLane]}</p></div></Table.Cell>);
                                             }
                                         })
                                     }</Table.Row>);

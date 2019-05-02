@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Drawer from "./Logic/Drawer";
+import Graph from "./Logic/Graph";
 
 class App extends Component {
   render() {
